@@ -31,6 +31,9 @@ namespace ATM
             }
 
         }
+        /// <summary>
+        ///     Takes commands to run and executes functions
+        /// </summary>
         public static void Core()
         {
 
@@ -89,7 +92,10 @@ namespace ATM
                 }
             }
         }
-
+        /// <summary>
+        ///    collects user cli input
+        /// </summary>
+        /// <returns>user input as int</returns>
         public static int Prompt()
         {
             Console.WriteLine();
@@ -103,7 +109,11 @@ namespace ATM
             inputVal = Convert.ToInt32(inputStr);
             return inputVal;
         }
-
+        /// <summary>
+        ///     subtracts from balance by input
+        /// </summary>
+        /// <param name="num">int num</param>
+        /// <returns>string pass</returns>
         public static string Withdraw(int num)
         {
             if (balance - num < 0)
@@ -124,7 +134,11 @@ namespace ATM
                 return "pass";
             }
         }
-
+        /// <summary>
+        ///     increases balance by user input
+        /// </summary>
+        /// <param name="num">int num</param>
+        /// <returns>new balance</returns>
         public static double Deposit(int num)
         {
             balance = balance += num;
@@ -132,7 +146,9 @@ namespace ATM
             Console.WriteLine($"NEW BALANCE: {balance}");
             return balance;
         }
-
+        /// <summary>
+        ///    Print out current balance
+        /// </summary>
         public static void Balance()
         {
             Console.WriteLine($"BALANCE: {balance}");
