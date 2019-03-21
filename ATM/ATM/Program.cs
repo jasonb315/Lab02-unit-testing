@@ -129,7 +129,7 @@ namespace ATM
         {
             balance = balance += num;
             Console.WriteLine($"<<<{num}");
-            Console.WriteLine($"NEW BALANCE: {num}");
+            Console.WriteLine($"NEW BALANCE: {balance}");
             return balance;
         }
 
