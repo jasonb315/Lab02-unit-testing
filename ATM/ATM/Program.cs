@@ -69,6 +69,8 @@ namespace ATM
                 {
                     try
                     {
+                        Console.WriteLine("DEPOSIT");
+                        Console.Write("enter amount:");
                         string inputStr = Console.ReadLine();
                         int inputVal;
                         inputVal = Convert.ToInt32(inputStr);
@@ -141,10 +143,19 @@ namespace ATM
         /// <returns>new balance</returns>
         public static double Deposit(int num)
         {
-            balance = balance += num;
-            Console.WriteLine($"<<<{num}");
-            Console.WriteLine($"NEW BALANCE: {balance}");
-            return balance;
+            if (num < 0)
+            {
+                Console.WriteLine("Invalid entry.");
+                return balance;
+            }
+            else
+            {
+                balance = balance += num;
+                Console.WriteLine($"<<<{num}");
+                Console.WriteLine($"NEW BALANCE: {balance}");
+                return balance;
+            }
+            
         }
         /// <summary>
         ///    Print out current balance

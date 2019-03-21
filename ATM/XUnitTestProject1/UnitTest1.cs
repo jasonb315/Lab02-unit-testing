@@ -27,5 +27,17 @@ namespace ATM
             Assert.Equal(b, x);
             Program.balance = 100;
         }
+
+        [Theory]
+        [InlineData(-10)]
+        [InlineData(-11)]
+        [InlineData(-50)]
+
+        public void Test3(int a)
+        {
+            double x = Program.Deposit(a);
+            double y = Program.balance;
+            Assert.Equal(y, x);
+        }
     }
 }
