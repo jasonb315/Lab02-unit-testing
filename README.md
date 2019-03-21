@@ -31,7 +31,7 @@ Then select and open ```AboutMe.sln```
 ##### Application Start
 ![Capture](https://github.com/jasonb315/Lab02-unit-testing/blob/master/assets/start.JPG) <br>
 ##### Using and ending the Application
-![Capture](https://github.com/jasonb315/Lab02-unit-testing/blob/master/assets/using.JPG) <br>
+![Capture](https://github.com/jasonb315/Lab02-unit-testing/blob/master/assets/use.JPG) <br>
 
 
 ------------------------------
