@@ -37,5 +37,7 @@ Then select and open ```AboutMe.sln```
 ------------------------------
 
 ## Change Log
+
 1.0: *Initial publish*
+
 1.1: *Failure test for deposit method, Cannot deposit negative amounts*
